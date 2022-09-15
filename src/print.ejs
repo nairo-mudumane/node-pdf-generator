@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Relatório</title>
 
-  <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 
 
   <style>
@@ -22,8 +22,8 @@
 </head>
 
 <body class="bg-purple-100">
-  <div class="m-8">
-    <h1 class="text-3xl mb-8">Listagem de passageiros</h1>
+  <div class="container m-8">
+    <h1 class="text-3xl mb-8">Listagem de Passageiros</h1>
     <table>
       <thead>
         <tr>
@@ -32,6 +32,7 @@
           <th>Horário</th>
         </tr>
       </thead>
+
       <tbody>
         <% if (passengers.length> 0) { %>
           <% passengers.forEach(passenger=> { %>
@@ -53,6 +54,7 @@
                 </tr>
                 <% } %>
       </tbody>
+
       <tfoot>
         <tr>
           <td colspan="2">
